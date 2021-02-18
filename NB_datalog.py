@@ -1,4 +1,3 @@
-
 #Add Phidgets library
 from Phidget22.Phidget import *
 from Phidget22.Devices.TemperatureSensor import *
@@ -15,7 +14,8 @@ temperatureSensor.openWaitForAttachment(1000)
 pressureSensor.openWaitForAttachment(1000)
 
 #Create data file
-outfile = open("phidgets_data.csv", "w")
+outfile = open("data.csv", "w")
+outfile.write("Date,Temperature,Pressure")
 
 #Record data points
 count = 0
