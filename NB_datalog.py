@@ -15,7 +15,7 @@ pressureSensor.openWaitForAttachment(1000)
 
 #Create data file
 outfile = open("data.csv", "w")
-outfile.write("Date,Temperature,Pressure")
+outfile.write("Date,Temperature,Pressure\n")
 
 #Record data points
 count = 0
