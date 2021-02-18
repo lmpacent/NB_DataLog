@@ -19,7 +19,7 @@ while (True):
     print("Logging data...")
     
     #Write data to file in CSV format
-    with open ('var/www/data.csv','a') as datafile:
+    with open ('data.csv','a') as datafile:
         datafile.write(time.strftime("%Y-%m-%d %H:%M:%S") + "," + 
                   str(temperatureSensor.getTemperature()) + "," +
                   str(pressureSensor.getPressure()) + "\n")
